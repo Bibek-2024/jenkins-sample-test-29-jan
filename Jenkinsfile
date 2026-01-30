@@ -23,8 +23,8 @@ pipeline {
         stage('Send Files to App Server') {
             steps {
                 sh '''
-                scp -o StrictHostKeyChecking=no target/*.jar ubuntu@${APP_SERVER_IP}:/home/ubuntu/
-                scp -o StrictHostKeyChecking=no Dockerfile ubuntu@${APP_SERVER_IP}:/home/ubuntu/
+                scp -o StrictHostKeyChecking=no target/*.jar ubuntu@${15.206.74.246}:/home/ubuntu/
+                scp -o StrictHostKeyChecking=no Dockerfile ubuntu@${15.206.74.246}:/home/ubuntu/
                 '''
             }
         }
